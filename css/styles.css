@@ -13,7 +13,7 @@ input[type="text"]:focus{
     outline: none ! important;
 }
 header{
-    padding: 30px;
+    padding: 35px 30px 33px;
 }
 #headerLinkWrapper{
     display: flex;
@@ -30,6 +30,11 @@ header a{
     font-size: 18px;
     
 }
+header a:hover{
+    cursor: pointer;
+    text-decoration:underline;
+    
+}
 #formWrapper{
     max-width:700px;
     margin: 10px auto;
@@ -43,11 +48,18 @@ header a{
     flex:1;
 
 }
+#searchFieldWrapper:hover{
+    
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(214,214,214,1);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(214,214,214,1);
+    box-shadow: 0px 0px 10px 0px rgba(214,214,214,1);
+}
 #searchFieldWrapper input{
     width: 655px;
     font-size: 18px;
     line-height: 34px;
     font-size: 22px;
+    padding-left: 12px;
 
     margin-left:5px;
     border:none;
@@ -67,4 +79,30 @@ header a{
     width: 30px;
     padding-left: 3px;
     
+}
+#buttonsWrapper{
+    padding: 18px 0 0;
+}
+#buttonsWrapper input[type="submit"]{
+    background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 5px;
+    color: #5F6368;
+    font-family: arial,sans-serif;
+    font-size: 21px;
+    margin: 11px 7px;
+    padding: 13px 22px;
+    line-height: 27px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+#buttonsWrapper input[type="submit"]:hover{
+
+    border: 1px solid lightgray;
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(212,212,212,1);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(212,212,212,1);
+    box-shadow: 0px 1px 5px 0px rgba(212,212,212,1);
 }
