@@ -9,13 +9,16 @@ a{
     text-decoration: none;
 
 }
+label{
+    color: #333;
+}
 input[type="text"]:focus{
     outline: none ! important;
 }
 header{
     padding: 35px 30px 33px;
 }
-header>div{
+.headerLinkWrapper{
     display: flex;
     float: right;
     margin-right: 0;
@@ -150,3 +153,138 @@ header a:hover{
     -moz-box-shadow: 0px 1px 5px 0px rgba(212,212,212,1);
     box-shadow: 0px 1px 5px 0px rgba(212,212,212,1);
 }
+
+/* ================================
+=========Advanced Search =======
+================================ */
+
+#headerAdvanced{
+    background-color: #f1f1f1;
+    padding: 22px 25px 16px;
+}
+.headerAdvancedWrapper{
+    display: flex;
+}
+.headerLinkWrapperAdvanced{
+    display:block;
+    width: 30%;
+}
+.headerLinkWrapperAdvanced a{
+    float: right;
+    display: block;
+    margin:10px 0 0 0;
+    
+    
+}
+.logoLeftTop {
+    width: 70%;
+}
+.logoLeftTop img{
+    width: 140px;
+}
+.subHeaderAdvanced{
+    padding: 38px 68px;
+    border-bottom: 1px solid  rgb(230, 230,230);
+}
+.subHeaderAdvanced label{
+    color: #d93025;
+    font-size: 30px;
+    
+}
+.formWrapperAdvanced{
+    width:90%;
+    padding: 60px 70px;
+}
+
+.formWrapperAdvanced span{
+    font-size: 25px;
+    
+}
+.formWrapperAdvanced form{
+    margin-top:26px;
+}
+.inputBox{
+    display:flex;
+    padding: 10px 0;
+}
+.inputBox label{
+    font-size: 19px;
+    line-height: 38px;
+}
+.labelWrapper{
+    width: 280px;
+}
+.inputWrapper{
+    width: 60%;
+   
+}
+.inputWrapper input{
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #c0c0c0;
+    font-size: 19px;
+}
+.inputWrapper input:focus{
+    border: 1px solid #4d90fe;
+    
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    /* display: inline-block; */
+    text-align: start;
+    appearance: textfield;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    /* -webkit-rtl-ordering: logical; */
+    cursor: text;
+    /* margin: 0em; */
+    font-family: arial;
+    font-size: 19px;
+    padding: 10px;
+    border-width: 1px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(195, 195, 195));
+    border-image: initial;
+    -moz-box-shadow:inset 20 0 4px lightgrey;
+     box-shadow:inset  0 0 4px lightgrey;
+}
+#input5{
+    background-color: #4d90fe;
+    background-image: -webkit-linear-gradient(top,#4d90fe,#4787ed);
+    border: 1px solid #3079ed;
+    color: #fff;
+    float:right;
+    left: 23px;
+    position: relative;
+    margin-top: 15px;
+    padding: 12px 19px;
+    width: unset;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius:3px;
+}
+#input5:hover{
+    background-color: #357ae8;
+    background-image: -webkit-linear-gradient(top,#4d90fe,#357ae8);
+    background-image: -moz-linear-gradient(top,#4d90fe,#357ae8);
+    background-image: -ms-linear-gradient(top,#4d90fe,#357ae8);
+    background-image: -o-linear-gradient(top,#4d90fe,#357ae8);
+    background-image: linear-gradient(top,#4d90fe,#357ae8);
+    border: 1px solid #2f5bb7;
+    border-image: initial;
+
+}
+
+@media screen and (max-width: 900px) {
+    .inputWrapper{
+        width: 50%;
+       
+    }
+    .labelWrapper{
+        width: 240px;
+    }
+  }
